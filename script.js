@@ -1,4 +1,13 @@
-// Simple alert interaction logic
-document.getElementById('cta-btn').addEventListener('click', () => {
-    alert('Thank you for interacting with the site template!');
+document.addEventListener('DOMContentLoaded', () => {
+  const year = document.getElementById('year');
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
+
+  const ctaButton = document.getElementById('cta-btn');
+  if (ctaButton) {
+    ctaButton.addEventListener('click', () => {
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
 });
