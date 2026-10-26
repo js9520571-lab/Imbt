@@ -1,58 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Modern Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Imbt helps startups and growing brands turn ideas into memorable, high-converting digital experiences."
+    />
+    <title>Imbt | Digital Growth Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Imbt home">
+          <span class="brand-mark">I</span>mbt
+        </a>
 
-    <!-- Header Navigation -->
-    <header>
-        <nav class="navbar">
-            <a href="#" class="logo">My<span>Brand</span></a>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="main-nav" aria-label="Main Navigation">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
         </nav>
+
+        <a href="#contact" class="button button-primary nav-button">Book a call</a>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to Your New Website</h1>
-            <p>A clean, responsive template built using raw HTML and CSS.</p>
-            <button id="cta-btn">Click Me</button>
-        </div>
-    </section>
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Stronger digital presence</span>
+            <h1>Build a brand experience people remember.</h1>
+            <p>
+              Imbt helps ambitious businesses design sharper websites, clearer messages,
+              and smoother customer journeys that drive trust and growth.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="button button-primary">Start your project</a>
+              <a href="#work" class="button button-secondary">See our work</a>
+            </div>
 
-    <!-- Features Section -->
-    <section id="features" class="features-section">
-        <h2>What We Do</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Fast Performance</h3>
-                <p>Optimized code that makes your web pages load instantly.</p>
-            </div>
-            <div class="card">
-                <h3>Responsive Design</h3>
-                <p>Looks gorgeous on desktops, tablets, and smartphone screens.</p>
-            </div>
-            <div class="card">
-                <h3>Easy to Customize</h3>
-                <p>Clean markup that is straightforward to edit and expand upon.</p>
-            </div>
-        </div>
-    </section>
+            <ul class="social-proof" aria-label="Key performance highlights">
+              <li><strong>120+</strong><span>Projects launched</span></li>
+              <li><strong>4.9/5</strong><span>Client rating</span></li>
+              <li><strong>3x</strong><span>Average growth lift</span></li>
+            </ul>
+          </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 MyBrand. All rights reserved.</p>
+          <div class="hero-visual" aria-label="Brand strategy dashboard preview">
+            <div class="dashboard-card">
+              <div class="panel-header">
+                <span class="dot red"></span>
+                <span class="dot gold"></span>
+                <span class="dot green"></span>
+              </div>
+
+              <div class="metrics-row">
+                <div>
+                  <p>Traffic</p>
+                  <strong>+64%</strong>
+                </div>
+                <div>
+                  <p>Leads</p>
+                  <strong>+41%</strong>
+                </div>
+              </div>
+
+              <div class="chart-bars" aria-hidden="true">
+                <span style="height: 48%"></span>
+                <span style="height: 62%"></span>
+                <span style="height: 54%"></span>
+                <span style="height: 78%"></span>
+                <span style="height: 95%"></span>
+                <span style="height: 88%"></span>
+                <span style="height: 100%"></span>
+              </div>
+
+              <div class="mini-list">
+                <div>
+                  <span class="label">Brand clarity</span>
+                  <strong>92%</strong>
+                </div>
+                <div>
+                  <span class="label">Conversion</span>
+                  <strong>7.4%</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar">
+        <div class="container trust-grid">
+          <span>Trusted by growing brands</span>
+          <span>Northstar Labs</span>
+          <span>Summit Studio</span>
+          <span>Quanta</span>
+          <span>Velora</span>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">What we do</span>
+            <h2>Tailored solutions for modern growth.</h2>
+          </div>
+
+          <div class="card-grid three-up">
+            <article class="info-card">
+              <div class="icon">01</div>
+              <h3>Brand Strategy</h3>
+              <p>
+                Clarify positioning, sharpen messaging, and create a distinct voice that
+                connects with your ideal audience.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <div class="icon">02</div>
+              <h3>Web Experience</h3>
+              <p>
+                Design polished digital experiences that balance aesthetics, usability,
+                and performance across every device.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <div class="icon">03</div>
+              <h3>Growth Systems</h3>
+              <p>
+                Establish the content, funnels, and optimization loops needed to turn
+                interest into measurable action.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section muted-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">How we work</span>
+            <h2>A clear process from idea to impact.</h2>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-step">
+              <span>Step 01</span>
+              <h3>Discover</h3>
+              <p>We map your audience, offer, and positioning to uncover the biggest opportunities.</p>
+            </div>
+            <div class="process-step">
+              <span>Step 02</span>
+              <h3>Design</h3>
+              <p>We build a strategy and visual system around clarity, trust, and conversion.</p>
+            </div>
+            <div class="process-step">
+              <span>Step 03</span>
+              <h3>Launch</h3>
+              <p>We refine the final experience and deliver a polished platform ready to perform.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Selected results</span>
+            <h2>Performance-first design that converts.</h2>
+          </div>
+
+          <div class="showcase-grid">
+            <article class="showcase-card feature-main">
+              <div>
+                <span class="chip">B2B SaaS</span>
+                <h3>Northstar Revenue</h3>
+                <p>Repositioned the brand and redesigned the landing experience to increase demo requests.</p>
+              </div>
+              <strong>+178% demo inquiries</strong>
+            </article>
+
+            <article class="showcase-card">
+              <span class="chip">Professional Services</span>
+              <h3>Summit Advisory</h3>
+              <p>Turned a flat website into a premium digital presence that generated more qualified leads.</p>
+              <strong>+96% lead quality</strong>
+            </article>
+
+            <article class="showcase-card">
+              <span class="chip">E-commerce</span>
+              <h3>Velora Goods</h3>
+              <p>Improved brand storytelling and purchase flow to create a much stronger customer journey.</p>
+              <strong>+54% revenue uplift</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonial-section">
+        <div class="container">
+          <div class="section-heading narrow">
+            <span class="eyebrow">Client feedback</span>
+            <h2>What partners say about working with Imbt.</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <blockquote class="testimonial-card">
+              “Imbt brought clarity, confidence, and a sharper strategy to our brand. The result felt premium from day one.”
+              <footer>
+                <strong>Amelia Brooks</strong>
+                <span>Founder, Northstar Labs</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              “The new experience gave us a stronger story and better conversion. It looked professional and performed even better.”
+              <footer>
+                <strong>Daniel Reed</strong>
+                <span>Marketing Lead, Velora</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section cta-section">
+        <div class="container cta-box">
+          <div>
+            <span class="eyebrow">Let’s build your next move</span>
+            <h2>Ready to turn your digital presence into a real asset?</h2>
+          </div>
+          <a href="mailto:hello@imbt.studio" class="button button-primary">hello@imbt.studio</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Imbt. Built for ambitious brands.</p>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
